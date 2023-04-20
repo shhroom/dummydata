@@ -9,4 +9,5 @@ const dataSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model('DataElement', dataSchema);
+module.exports =
+  mongoose.models.DataElement || mongoose.model('DataElement', dataSchema);

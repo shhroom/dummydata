@@ -12,7 +12,8 @@ const fieldTypeSchema = new mongoose.Schema({
   fieldType: String,
 });
 
-const FieldType = mongoose.model('FieldType', fieldTypeSchema);
+const FieldType =
+  mongoose.models.FieldType || mongoose.model('FieldType', fieldTypeSchema);
 
 module.exports = { FieldType, FIELD_TYPES };
 

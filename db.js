@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const { DataElement, FieldType, FIELD_TYPES } = require('./Models');
 
-const MONGO_URL = 'mongodb://127.0.0.1:27017';
+const MONGO_URL = 'mongodb://127.0.0.1:27017/dummy_data';
 
 async function purgeDb() {
   await mongoose.connect(MONGO_URL);
